@@ -49,6 +49,50 @@ spot_on, closest_1, closest_2 = [None] * 3
 
 # Replace this comment with your code
 
+temp1 = set([])
+temp2 = []
+temp3 = []
+
+num = L.copy()
+for denominator in num:
+    for numerator in L:
+        if numerator <= denominator and denominator!=0:
+            temp1.add(Fraction(numerator, denominator))
+# print('test1')
+for e in temp1:
+    temp2.append(e)
+# print('test2')
+temp2 = sorted(temp2)
+# print('test3')
+for e in temp2:
+    fractions.append(str(e))
+# print(fractions,'\n')
+if Fraction(1,2) in temp2:
+    spot_on = 1
+else:
+    temp1.add(Fraction(1,2))
+    for e in temp1:
+        temp3.append(e)
+    temp3 = sorted(temp3)
+#     print(temp3)
+    target = temp3.index(Fraction(1,2))
+#     print(target)
+    if target ==0:
+        closest_1 = fractions[target]
+    elif target ==len(temp3):
+        closest_1 = fractions[target-1]
+    elif temp3[target] - temp3[target-1] < temp3[target + 1] - temp3[target]:
+        closest_1 = fractions[target-1]
+#         print("closest_1",closest_1)
+    elif  temp3[target + 1] - temp3[target] <temp3[target] - temp3[target-1]:
+        closest_1 = fractions[target]
+#         print("closest_1",closest_1)
+    else:
+        closest_1 = fractions[target-1]
+        closest_2 = fractions[target]
+#         print("closest_1",closest_1)
+#         print("closest_2",closest_2)
+
 print('\nThe fractions no greater than 1 that can be built from L, from smallest to largest, are:')
 print('  ', '  '.join(e for e in fractions))
 if spot_on:
