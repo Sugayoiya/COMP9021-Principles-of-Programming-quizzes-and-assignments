@@ -44,24 +44,48 @@ N = []
 # Replace this comment with your code
 # mid_e = length//2
 # M list
+if length ==0:
+    M = []
+elif length ==1:
+    M = L
+elif length ==2:
+    M = L[::-1]
+else:
+    begin = 0
+    last = length - 1
+    M_tag = 0
+    M.append(L[length//2])
 
-begin = 0
-last = length - 1
-M_tag = 0
-M.append(L[length//2])
-
-while 1:
-	M.append(L[begin])
-	M.append(L[last])
-	begin += 1
-	if begin == length//2:
-		break
-	last -= 1
-	if last == length//2:
-		break
+    while last != begin :
+        M.append(L[begin])
+        M.append(L[last])
+        begin += 1
+        last -= 1
+        if begin == last - 1 :
+            M.append(L[begin])
+            break
 
 # N list
+temp = []
+for i in range (0, len(L)):
+    temp.append(L[i])
+index = 0
 
+for i in range(0, len(L)):
+    if temp[index] != -1:
+        N.append(temp[index])
+    else:
+        for i in range(0,len(L)):
+            if temp[i] != -1:
+                index = i
+                break;
+        N.append(temp[index])
+            
+        
+    temp_index = temp[index]
+    temp[index] = -1
+    index = temp_index
+    
     
 print('\nHere is M:')
 print('  ', M)
