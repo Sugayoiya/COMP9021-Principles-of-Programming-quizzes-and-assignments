@@ -67,3 +67,81 @@ and the length of L being input by the user, and generates:
 # and for a given step size, from stairs with the smallest number of steps to stairs
 # with the largest number of stairs.
 ```
+
+##### quiz4
+
+```
+# Uses data available at http://data.worldbank.org/indicator
+# on Forest area (sq. km) and Agricultural land area (sq. km).
+# Prompts the user for two distinct years between 1990 and 2004
+# as well as for a strictly positive integer N,
+# and outputs the top N countries where:
+# - agricultural land area has increased from oldest input year to most recent input year;
+# - forest area has increased from oldest input year to most recent input year;
+# - the ratio of increase in agricultural land area to increase in forest area determines
+#   output order.
+# Countries are output from those whose ratio is largest to those whose ratio is smallest.
+# In the unlikely case where many countries share the same ratio, countries are output in
+# lexicographic order.
+# In case fewer than N countries are found, only that number of countries is output.
+```
+
+##### quiz5
+
+**Sample outputs**
+```
+$ python3 quiz_5.py
+Enter four nonnegative integers: 0 1 4 4
+Here is the grid that has been generated:
+1 1 0 1
+1 1 1 1
+1 0 0 1
+0 0 1 0
+The number of paths from 1 to 1 is: 10
+
+$ python3 quiz_5.py
+Enter four nonnegative integers: 0 2 4 4
+Here is the grid that has been generated:
+1 1 0 1
+2 1 1 1
+1 1 2 0
+2 0 1 0
+The number of paths from 1 to 1 is: 3
+The number of paths from 1 to 2 is: 7
+
+$ python3 quiz_5.py
+Enter four nonnegative integers: 0 3 4 6
+Here is the grid that has been generated:
+3 3 0 2 3 3
+2 3 2 1 1 2
+1 0 2 1 2 0
+0 2 3 0 2 3
+The number of paths from 1 to 2 is: 2
+The number of paths from 1 to 3 is: 6
+
+$ python3 quiz_5.py
+Enter four nonnegative integers: 0 4 5 8
+Here is the grid that has been generated:
+3 3 0 2 4 3 3 2
+3 2 4 1 4 1 2 1
+0 4 2 4 4 1 2 0
+0 2 3 4 0 2 3 2
+4 1 4 3 3 4 2 0
+The number of paths from 1 to 2 is: 1
+The number of paths from 1 to 3 is: 5
+The number of paths from 1 to 4 is: 2
+
+$ python3 quiz_5.py
+Enter four nonnegative integers: 0 4 6 6
+Here is the grid that has been generated:
+3 3 0 2 4 3
+3 2 3 2 4 1
+4 1 2 1 0 4
+2 4 4 1 2 0
+0 2 3 4 0 2
+3 2 4 1 4 3
+The number of paths from 1 to 1 is: 2
+The number of paths from 1 to 2 is: 1
+The number of paths from 1 to 3 is: 5
+The number of paths from 1 to 4 is: 1
+```
