@@ -145,3 +145,69 @@ The number of paths from 1 to 2 is: 1
 The number of paths from 1 to 3 is: 5
 The number of paths from 1 to 4 is: 1
 ```
+
+##### quiz6
+```
+# Creates a class to represent a permutation of 1, 2, ..., n for some n >= 0.
+#
+# An object is created by passing as argument to the class name:
+# - either no argument, in which case the empty permutation is created, or
+# - "length = n" for some n >= 0, in which case the identity over 1, ..., n is created, or
+# - the numbers 1, 2, ..., n for some n >= 0, in some order, possibly together with "lengh = n".
+#
+# __len__(), __repr__() and __str__() are implemented, the latter providing the standard form
+# decomposition of the permutation into cycles (see wikepedia page on permutations for details).
+#
+# Objects have:
+# - nb_of_cycles as an attribute
+# - inverse() as a method
+#
+# The * operator is implemented for permutation composition, for both infix and in-place uses.
+```
+
+##### quiz7
+
+```
+# Generates a linked list of a length determined by user input,
+# consisting of random nonnegative integers whose upper bound is also determined
+# by user input, and reorders the list so that it starts with all odd values and
+# ends with all even values, preserving the order of odd and even values in the
+# original list, respectively.
+```
+
+##### quiz8
+
+```
+# Randomly fills a grid of size 10 x 10 with digits between 0
+# and bound - 1, with bound provided by the user.
+# Given a point P of coordinates (x, y) and an integer "target"
+# also all provided by the user, finds a path starting from P,
+# moving either horizontally or vertically, in either direction,
+# so that the numbers in the visited cells add up to "target".
+# The grid is explored in a depth-first manner, first trying to move north,
+# always trying to keep the current direction,
+# and if that does not work turning in a clockwise manner.
+```
+
+##### quiz9
+
+```
+# Generates a binary tree T whose shape is random and whose nodes store
+# random even positive integers, both random processes being directed by user input.
+# With M being the maximum sum of the nodes along one of T's branches, minimally expands T
+# to a tree T* such that:
+# - every inner node in T* has two children, and
+# - the sum of the nodes along all of T*'s branches is equal to M.
+```
+
+##### quiz10
+
+```
+# Randomly generates N distinct integers with N provided by the user,
+# inserts all these elements into a priority queue, and outputs a list
+# L consisting of all those N integers, determined in such a way that:
+# - inserting the members of L from those of smallest index of those of
+#   largest index results in the same priority queue;
+# - L is preferred in the sense that the last element inserted is as large as
+#   possible, and then the penultimate element inserted is as large as possible, etc.
+```
