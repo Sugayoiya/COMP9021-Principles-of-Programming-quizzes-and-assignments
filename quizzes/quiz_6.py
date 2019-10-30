@@ -16,6 +16,7 @@
 #
 # Written by *** and Eric Martin for COMP9021
 
+# this file is lost
 
 class PermutationError(Exception):
     def __init__(self, message):
