@@ -1,6 +1,6 @@
 ##### quiz1
 
-'''
+```
 Generates a list L of random nonnegative integers smaller than the length of L,
 whose value is input by the user, and outputs two lists:
 - a list M consisting of L's middle element, followed by L's first element,
@@ -13,12 +13,12 @@ whose value is input by the user, and outputs two lists:
   are unused, and then, for the least j such that L[j] is unused, followed by L[j],
   possibly followed by L[L[j]], possibly followed by L[L[L[j]]]..., for as long as
   L[L[j]], L[L[L[j]]]... are unused... until all members of L have been used up.
-'''
+```
 
 
 ##### quiz2
 
-'''
+```
 Generates a list L of random nonnegative integers, the largest possible value
 and the length of L being input by the user, and generates:
 - a list "fractions" of strings of the form 'a/b' such that:
@@ -32,7 +32,7 @@ and the length of L being input by the user, and generates:
   if that member is unique;
 - otherwise, the two members "closest_1" and "closest_2" of "fractions" that are closest to 1/2,
   in their natural order.
-'''
+```
 
 ##### quiz3
 
