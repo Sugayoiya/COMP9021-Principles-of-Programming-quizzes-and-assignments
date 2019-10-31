@@ -19,24 +19,24 @@ You will design and implement a program that will read a sudoku grid whose repre
 
 ##### file structure:
 
->sudoku.py
->>  main program
+- sudoku.py
+>  main program
 
->sudoku_\*.txt
->>  sudoku file
+- sudoku_\*.txt
+>  sudoku file
 
->sudoku_\*_bare.tex
->>  sudoku_\*_bare.tex that can be given as argument to pdflatex to produce a file named sudoku_3_bare.pdf that views as follows.
+- sudoku_\*_bare.tex
+>  sudoku_\*_bare.tex that can be given as argument to pdflatex to produce a file named sudoku_3_bare.pdf that views as follows.
 ![alt ass1_1](https://github.com/mokomokoo/COMP9021-Principles-of-Programming-quizzes-and-assignments/blob/master/assignments/Assignment_2/bare.png)
 
->sudoku_\*_marked.tex
->>   sudoku_\*_marked.tex that can be given as argument to pdflatex to produce a file named sudoku_3_marked.pdf that views as follows.
-![alt ass1_1](https://github.com/mokomokoo/COMP9021-Principles-of-Programming-quizzes-and-assignments/blob/master/assignments/Assignment_2/marked.png)
-
->sudoku_\*_forced.tex
->>  sudoku_\*_forced.tex that can be given as argument to pdflatex to produce a file named sudoku_3_forced.pdf that views as follows.
+- sudoku_\*_forced.tex
+>  sudoku_\*_forced.tex that can be given as argument to pdflatex to produce a file named sudoku_3_forced.pdf that views as follows.
 ![alt ass1_1](https://github.com/mokomokoo/COMP9021-Principles-of-Programming-quizzes-and-assignments/blob/master/assignments/Assignment_2/forced.png)
 
->sudoku_\*_worked.tex
->>   sudoku_\*_worked.tex that can be given as argument to pdflatex to produce a file named sudoku_3_worked.pdf that views as follows.
+- sudoku_\*_marked.tex
+>   sudoku_\*_marked.tex that can be given as argument to pdflatex to produce a file named sudoku_3_marked.pdf that views as follows.
+![alt ass1_1](https://github.com/mokomokoo/COMP9021-Principles-of-Programming-quizzes-and-assignments/blob/master/assignments/Assignment_2/marked.png)
+
+- sudoku_\*_worked.tex
+>   sudoku_\*_worked.tex that can be given as argument to pdflatex to produce a file named sudoku_3_worked.pdf that views as follows.
 ![alt ass1_1](https://github.com/mokomokoo/COMP9021-Principles-of-Programming-quizzes-and-assignments/blob/master/assignments/Assignment_2/worked.png)
