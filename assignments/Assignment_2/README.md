@@ -1,3 +1,5 @@
+### sudoku solving
+
 Solving a **sudoku puzzle** is a very common assignment; it is not difficult and moderately interesting as a “solution” (the completed grid) tells nothing about how the solution was reached. More interesting solvers are logical in the sense that they (possibly partially only) solve the puzzle in steps and at every step, explain how they made some progress; they do so by using some of the well known techniques that most people who solve sudoku puzzles apply. Two remarks are in order.
 
 
@@ -5,6 +7,18 @@ Solving a **sudoku puzzle** is a very common assignment; it is not difficult and
 
 * Often, it is not possible to completely solve a puzzle using exclusively the chosen methods; at some point no progress can be made and then a random guess has to be made to either put a digit into a given empty cell, or to remove a digit from the list of possible digits that can go into a given cell. It might subsequently be necessary to backtrack and make alternative guesses if the earlier guesses turn out to be inconsistent with a solution.
 
+##### input sample
+```
+039500000
+000800070
+000010904
+100400003
+000000000
+007000860
+006708200
+010090005
+000001008
+```
 
 ##### file structure:
 
