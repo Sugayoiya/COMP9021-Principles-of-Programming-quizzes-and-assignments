@@ -26,7 +26,7 @@ Solving a **sudoku puzzle** is a very common assignment; it is not difficult and
 >  main program
 
 - sudoku_\*.txt
->  sudoku file
+>  input sudoku file
 
 - sudoku_\*_bare.tex
 >  sudoku_\*_bare.tex that can be given as argument to pdflatex to produce a file named sudoku_\*_bare.pdf that views as follows.
